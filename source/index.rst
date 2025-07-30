@@ -7,7 +7,7 @@
    `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
    documentation for details.
 
-Odoo Book: Accounting
+کتاب اودوو: حسابداری
 ===================================
 
 .. ساختار کتاب
@@ -33,4 +33,9 @@ Odoo Book: Accounting
 
 
    introduction
-
+   statements
+   information-gathering
+   documents
+   accounting-formiula
+   accounting-flow
+   accounting-flow-biz
