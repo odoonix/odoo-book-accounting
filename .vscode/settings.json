@@ -3,5 +3,6 @@
     "editor.wordWrap": "on",
     "editor.rulers": [
         88
-    ]
+    ],
+    "github.copilot.enable": false
 }
