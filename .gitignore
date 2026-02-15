@@ -1,0 +1,9 @@
+
+
+# Ignore all output file
+build/
+
+
+# Ignore python files
+.venv/
+

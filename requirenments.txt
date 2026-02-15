@@ -1,0 +1,2 @@
+sphinx_minoo_theme
+sphinxcontrib.jquery
