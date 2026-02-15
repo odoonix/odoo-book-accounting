@@ -1,0 +1,3 @@
+sphinx
+sphinxcontrib.jquery
+pydata_sphinx_theme
