@@ -1,0 +1,42 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>250</y><w>210</w><h>140</h></coordinates><panel_attributes>&lt;&lt;accounting&gt;&gt;
+Journal
+{account.journal}
+--
++ id
++ name
++ default_account_id
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>230</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;accounting&gt;&gt;
+Journal Entery
+{account.move}
+--
++ id
++ name
++ user_id
++ create_date
++ update_date
++ accounting_date
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>230</y><w>210</w><h>230</h></coordinates><panel_attributes>&lt;&lt;accounting&gt;&gt;
+Journal Entery Item
+{account.move}
+--
++ id
++ account_id
++ user_id
++ debit
++ credti
++ create_date
++ update_date
++ accounting_date
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>300</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+&lt; submited in </panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>310</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+&lt; is part of</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element></diagram>
