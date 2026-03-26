@@ -45,26 +45,17 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: فهرست مطالب:
 
    introduction
    history
    chapter001/index
-   chapter001/quize
    chapter002/index
-   chapter002/quize
    chapter003/index
-   chapter003/quize
    chapter004/index
-   chapter004/quize
    chapter005/index
-   chapter005/quize
    chapter006/index
-   chapter006/quize
    chapter007/index
-   chapter007/quize
    chapter008/index
-   chapter008/quize
    chapter009/index
-   chapter009/quize
    
