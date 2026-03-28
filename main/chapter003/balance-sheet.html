@@ -50,6 +50,7 @@
                 gtag('js', new Date());
                 gtag('config', 'G-KF50Z2TPES');
             </script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter003/balance-sheet';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -61,8 +62,8 @@
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="فهرست" href="../genindex.html" />
     <link rel="search" title="جستجو" href="../search.html" />
-    <link rel="next" title="صورت سود و زیان" href="profit-and-loss.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="cash-flow-statement.html" />
+    <link rel="next" title="صورت جریان وجوه نقد" href="cash-flow-statement.html" />
+    <link rel="prev" title="صورت سرمایه (تغییرات حقوق مالکانه)" href="equity-report.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fa"/>
   <meta name="docsearch:version" content="" />
@@ -194,7 +195,7 @@
 
 <li class=" current active">
   <a class="nav-link dropdown-item nav-internal" href="index.html">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -388,7 +389,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="index.html">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -523,9 +524,16 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">مقدمه</a></li>
 <li class="toctree-l1"><a class="reference internal" href="statements.html">انواع صورت‌های مالی اساسی</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">ترازنامه: صورت وضعیت مالی</a></li>
 <li class="toctree-l1"><a class="reference internal" href="profit-and-loss.html">صورت سود و زیان</a></li>
-<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equity-report.html">صورت سرمایه (تغییرات حقوق مالکانه)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ترازنامه: صورت وضعیت مالی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash-flow-statement.html">صورت جریان وجوه نقد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="execuative-summary.html">گزارش خلاصه اجرایی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tax-report.html">گزارش مالیات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genral-ledger.html">دفتر کل (General Ledger)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial-balance.html">تراز آزمایشی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journal-report.html">گزارش دفتر روزنامه (Journal Report)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل سوم</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quize.html">تمرین‌های فصل سوم</a></li>
 </ul>
 </div>
@@ -585,7 +593,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">فصل سوم: تهیه صورت‌های مالی</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">فصل سوم: صورت‌های مالی و گزارش‌های مالی</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">ترازنامه: صورت وضعیت مالی</span></li>
   </ul>
@@ -606,102 +614,200 @@
                   
   <section id="id1">
 <h1>ترازنامه: صورت وضعیت مالی<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>ترازنامه گزارشی است که وضعیت مالی یک واحد اقتصادی را در یک «تاریخ مشخص» نشان می‌دهد.</p>
-<p>مثال: در تاریخ 29/12/1388</p>
-<p>برخلاف صورت سود و زیان که مربوط به یک دوره است، ترازنامه مربوط به یک لحظه خاص است.</p>
-<p>ترازنامه مانند یک «عکس» از وضعیت مالی واحد اقتصادی در پایان دوره است.</p>
+<p>ترازنامه (Balance Sheet) گزارشی است که وضعیت مالی یک واحد اقتصادی را در <strong>یک تاریخ
+مشخص</strong> نشان می‌دهد. این صورت مالی نشان می‌دهد که شرکت چه دارایی‌هایی دارد، چه
+بدهی‌هایی دارد و سرمایه مالکان چقدر است.</p>
+<div class="admonition note">
+<p class="admonition-title">توجه</p>
+<p>ترازنامه مانند یک <strong>عکس</strong> از وضعیت مالی در لحظه‌ای خاص است؛ مثلاً در پایان سال مالی.
+این تفاوت اصلی آن با صورت سود و زیان است که مانند یک <strong>فیلم</strong> برای یک دوره زمانی است.</p>
+</div>
 <section id="id2">
-<h2>ساختار ترازنامه<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>تراز نامه از سه بخش اصلی تشکیل شده است: دارایی، بدهی‌ها و سرمایه. این سه بخش اصلی با هم
-یک رابطه اساسی را ایجاد می‌کنند که عبارت است:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>دارایی‌ها<span class="w"> </span><span class="o">=</span><span class="w"> </span>بدهی‌ها<span class="w"> </span>+<span class="w"> </span>سرمایه
+<h2>مشخصه زمانی<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>در تاریخ ۲۹ اسفند ۱۴۰۳
 </pre></div>
 </div>
-<p>حساب‌هایی که در حسابداری برای این سه بخش استفاده می‌شود به حساب‌های ترازنامه‌ای معروف هستند.
-این حساب‌ها همواره باید در ا ین رابطه صدق کنند.</p>
 </section>
 <section id="id3">
-<h2>مثال ترازنامه مؤسسه بهار<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>در نمونه زیر حساب‌های یک شرکت آورده شده است. با توجه به این مقادیر می‌توانید رابطه بالا
-را محاسبه کنید.</p>
-<p>دارایی‌ها:
-صندوق ................ 224,000
-حساب‌های دریافتنی ..... 140,000
-اسناد دریافتنی ......... 120,000
-زمین .................... 400,000
-وسایل نقلیه ............. 280,000</p>
-<p>جمع دارایی‌ها ......... 1,164,000</p>
-<p>بدهی‌ها:
-حساب‌های پرداختنی ..... 110,000
-اسناد پرداختنی کوتاه‌مدت 80,000
-اسناد پرداختنی بلندمدت 140,000</p>
-<p>جمع بدهی‌ها ............ 330,000</p>
-<p>سرمایه:
-سرمایه ................. 834,000</p>
-<p>جمع سرمایه ................. 834,000</p>
-<p>جمع بدهی و سرمایه ..... 1,164,000</p>
+<h2>معادله اساسی ترازنامه<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>ترازنامه نمایش دیداری معادله اساسی حسابداری است:</p>
+<div class="math notranslate nohighlight">
+\[دارایی‌ها = بدهی‌ها + حقوق\ مالکانه\]</div>
+<p>دو طرف این معادله همواره باید با هم <strong>تراز</strong> (برابر) باشند — به همین دلیل نام آن ترازنامه است.</p>
 </section>
 <section id="id4">
-<h2>ترازنامه طبقه‌بندی شده<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>در ترازنامه طبقه‌بندی شده:</p>
-<p>دارایی‌ها به دو گروه تقسیم می‌شوند:</p>
-<ul class="simple">
-<li><p>دارایی‌های جاری</p></li>
-<li><p>دارایی‌های غیرجاری</p></li>
-</ul>
-<p>بدهی‌ها نیز به دو گروه تقسیم می‌شوند:</p>
-<ul class="simple">
-<li><p>بدهی‌های جاری</p></li>
-<li><p>بدهی‌های بلندمدت</p></li>
-</ul>
-<section id="id5">
-<h3>دارایی جاری<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<p>دارایی‌ای که انتظار می‌رود طی یک سال به وجه نقد تبدیل شود.</p>
-<p>مثال:
-- وجه نقد
-- حساب‌های دریافتنی
-- اسناد دریافتنی کوتاه‌مدت
-- موجودی کالا</p>
+<h2>اجزای ترازنامه<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>ترازنامه از سه بخش اصلی تشکیل شده است:</p>
+<dl class="simple">
+<dt><strong>۱. دارایی‌ها (Assets)</strong></dt><dd><p>منابع اقتصادی که در اختیار واحد تجاری قرار دارد.</p>
+</dd>
+<dt><strong>۲. بدهی‌ها (Liabilities)</strong></dt><dd><p>تعهدات واحد تجاری در برابر اشخاص خارج از سازمان.</p>
+</dd>
+<dt><strong>۳. حقوق مالکانه (Owner's Equity)</strong></dt><dd><p>ادعای مالک نسبت به دارایی‌های واحد تجاری پس از کسر بدهی‌ها.</p>
+</dd>
+</dl>
 </section>
+<section id="id5">
+<h2>ترازنامه طبقه‌بندی‌شده<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>در ترازنامه طبقه‌بندی‌شده، دارایی‌ها و بدهی‌ها بر اساس نقدشوندگی و سررسید دسته‌بندی می‌شوند:</p>
 <section id="id6">
-<h3>دارایی غیرجاری<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<p>دارایی‌هایی که بیش از یک سال نگهداری می‌شوند.</p>
-<p>مثال:
-- زمین
-- ساختمان
-- وسایل نقلیه
-- اثاثه اداری</p>
+<h3>دارایی‌های جاری<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>دارایی‌هایی که انتظار می‌رود ظرف <strong>یک سال</strong> به وجه نقد تبدیل شوند یا مصرف گردند:</p>
+<ul class="simple">
+<li><p>وجه نقد و معادل‌های نقدی</p></li>
+<li><p>حساب‌های دریافتنی (بدهکاران)</p></li>
+<li><p>اسناد دریافتنی کوتاه‌مدت</p></li>
+<li><p>موجودی کالا</p></li>
+<li><p>پیش‌پرداخت‌ها</p></li>
+</ul>
 </section>
 <section id="id7">
-<h3>بدهی جاری<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<p>تعهداتی که طی یک سال پرداخت می‌شوند.</p>
-<p>مثال:
-- حساب‌های پرداختنی
-- اسناد پرداختنی کوتاه‌مدت</p>
+<h3>دارایی‌های غیرجاری (ثابت)<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>دارایی‌هایی که بیش از یک سال در اختیار واحد تجاری می‌مانند:</p>
+<ul class="simple">
+<li><p>زمین</p></li>
+<li><p>ساختمان</p></li>
+<li><p>ماشین‌آلات و تجهیزات</p></li>
+<li><p>وسایل نقلیه</p></li>
+<li><p>اثاثه اداری و رایانه</p></li>
+</ul>
 </section>
 <section id="id8">
-<h3>بدهی بلندمدت<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<p>تعهداتی که بیش از یک سال بعد پرداخت می‌شوند.</p>
-</section>
+<h3>بدهی‌های جاری<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>تعهداتی که ظرف <strong>یک سال</strong> باید پرداخت شوند:</p>
+<ul class="simple">
+<li><p>حساب‌های پرداختنی (بستانکاران)</p></li>
+<li><p>اسناد پرداختنی کوتاه‌مدت</p></li>
+<li><p>پیش‌دریافت از مشتریان</p></li>
+<li><p>مالیات پرداختنی</p></li>
+<li><p>حقوق پرداختنی</p></li>
+</ul>
 </section>
 <section id="id9">
-<h2>ماهیت مانده حساب‌ها<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
-<p>حساب‌ها از نظر ماهیت به دو گروه تقسیم می‌شوند:</p>
-<p>حساب‌های دارای ماهیت بدهکار:
-- دارایی‌ها
-- هزینه‌ها
-- برداشت</p>
-<p>حساب‌های دارای ماهیت بستانکار:
-- بدهی‌ها
-- سرمایه
-- درآمدها</p>
+<h3>بدهی‌های بلندمدت<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>تعهداتی که سررسید آن‌ها بیش از یک سال است:</p>
+<ul class="simple">
+<li><p>وام‌های بلندمدت</p></li>
+<li><p>اسناد پرداختنی بلندمدت</p></li>
+<li><p>تعهدات اجاره بلندمدت</p></li>
+</ul>
+</section>
 </section>
 <section id="id10">
-<h2>نکته مهم برای آزمون‌ها<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
-<p>در رابطه با حساب‌های طبقه بندی شده می‌توان یک سری قواعد در نظر گرفت. با توجه به نوع کسب
-و کارهای می‌توان گفت</p>
-<p>درآمد همیشه بستانکار است.</p>
-<p>هزینه همیشه بدهکار است.</p>
+<h2>ماهیت مانده حساب‌ها<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>برای تهیه صحیح ترازنامه، باید ماهیت مانده هر حساب را بدانید:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>نوع حساب</p></th>
+<th class="head"><p>ماهیت مانده</p></th>
+<th class="head"><p>ستون در ترازنامه</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>دارایی‌ها</p></td>
+<td><p>بدهکار</p></td>
+<td><p>سمت راست (دارایی)</p></td>
+</tr>
+<tr class="row-odd"><td><p>بدهی‌ها</p></td>
+<td><p>بستانکار</p></td>
+<td><p>سمت چپ (بدهی)</p></td>
+</tr>
+<tr class="row-even"><td><p>سرمایه / حقوق مالکانه</p></td>
+<td><p>بستانکار</p></td>
+<td><p>سمت چپ (سرمایه)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id11">
+<h2>مثال عملی<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<p>حساب‌های مؤسسه خدماتی بهار در پایان سال ۱۴۰۳:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>حساب</p></th>
+<th class="head"><p>مبلغ (ریال)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>صندوق</p></td>
+<td><p>۲۲۴٬۰۰۰</p></td>
+</tr>
+<tr class="row-odd"><td><p>حساب‌های دریافتنی</p></td>
+<td><p>۱۴۰٬۰۰۰</p></td>
+</tr>
+<tr class="row-even"><td><p>اسناد دریافتنی</p></td>
+<td><p>۱۲۰٬۰۰۰</p></td>
+</tr>
+<tr class="row-odd"><td><p>زمین</p></td>
+<td><p>۴۰۰٬۰۰۰</p></td>
+</tr>
+<tr class="row-even"><td><p>وسایل نقلیه</p></td>
+<td><p>۲۸۰٬۰۰۰</p></td>
+</tr>
+<tr class="row-odd"><td><p>حساب‌های پرداختنی</p></td>
+<td><p>۱۱۰٬۰۰۰</p></td>
+</tr>
+<tr class="row-even"><td><p>اسناد پرداختنی کوتاه‌مدت</p></td>
+<td><p>۸۰٬۰۰۰</p></td>
+</tr>
+<tr class="row-odd"><td><p>اسناد پرداختنی بلندمدت</p></td>
+<td><p>۱۴۰٬۰۰۰</p></td>
+</tr>
+<tr class="row-even"><td><p>سرمایه (پایان دوره)</p></td>
+<td><p>۸۳۴٬۰۰۰</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id12">
+<h2>ترازنامه مؤسسه خدماتی بهار<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>مؤسسه خدماتی بهار
+ترازنامه (صورت وضعیت مالی)
+در تاریخ ۲۹/۱۲/۱۴۰۳
+═══════════════════════════════════════════════
+دارایی‌ها              │  بدهی‌ها و سرمایه
+───────────────────────┼───────────────────────
+دارایی‌های جاری:       │  بدهی‌های جاری:
+صندوق ........  ۲۲۴٬۰۰۰ │  ح/پرداختنی .  ۱۱۰٬۰۰۰
+ح/دریافتنی .. ۱۴۰٬۰۰۰ │  اسناد پ/ک ..   ۸۰٬۰۰۰
+اسناد دریافتنی ۱۲۰٬۰۰۰ │  ج‌بدهی جاری   ۱۹۰٬۰۰۰
+ج دارایی جاری  ۴۸۴٬۰۰۰ │
+                        │  بدهی بلندمدت:
+دارایی‌های ثابت:       │  اسناد پ/بل .  ۱۴۰٬۰۰۰
+زمین ........ ۴۰۰٬۰۰۰  │
+وسایل نقلیه  ۲۸۰٬۰۰۰  │  ج کل بدهی‌ها  ۳۳۰٬۰۰۰
+ج دارایی ثابت  ۶۸۰٬۰۰۰ │
+                        │  سرمایه ....   ۸۳۴٬۰۰۰
+───────────────────────┼───────────────────────
+جمع دارایی‌ها ۱٬۱۶۴٬۰۰۰│  جمع بدهی+سر  ۱٬۱۶۴٬۰۰۰
+═══════════════════════════════════════════════
+</pre></div>
+</div>
+</section>
+<section id="id13">
+<h2>ترازنامه در اودوو<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<p>مسیر دسترسی:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Accounting → Reporting → Balance Sheet
+</pre></div>
+</div>
+<p>اودوو ترازنامه را به‌صورت طبقه‌بندی‌شده نمایش می‌دهد و امکان مقایسه با دوره‌های قبل،
+فیلتر بر اساس تاریخ، و تجمیع یا ریزنمایی حساب‌ها را فراهم می‌کند.</p>
+<div class="admonition important">
+<p class="admonition-title">مهم</p>
+<p>سرمایه پایان دوره که در ترازنامه نشان داده می‌شود، همان عددی است که در
+<strong>صورت سرمایه</strong> محاسبه شده است. این رابطه، یکپارچگی صورت‌های مالی را تضمین می‌کند.</p>
+</div>
 </section>
 </section>
 
@@ -716,20 +822,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cash-flow-statement.html"
+       href="equity-report.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">قبلی</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">صورت سرمایه (تغییرات حقوق مالکانه)</p>
       </div>
     </a>
     <a class="right-next"
-       href="profit-and-loss.html"
+       href="cash-flow-statement.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">بعدی</p>
-        <p class="prev-next-title">صورت سود و زیان</p>
+        <p class="prev-next-title">صورت جریان وجوه نقد</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -752,17 +858,20 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ساختار ترازنامه</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">مثال ترازنامه مؤسسه بهار</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">ترازنامه طبقه‌بندی شده</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">دارایی جاری</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">دارایی غیرجاری</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">بدهی جاری</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">بدهی بلندمدت</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">مشخصه زمانی</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">معادله اساسی ترازنامه</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">اجزای ترازنامه</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">ترازنامه طبقه‌بندی‌شده</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">دارایی‌های جاری</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">دارایی‌های غیرجاری (ثابت)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">بدهی‌های جاری</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">بدهی‌های بلندمدت</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">ماهیت مانده حساب‌ها</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">نکته مهم برای آزمون‌ها</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">ماهیت مانده حساب‌ها</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">مثال عملی</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">ترازنامه مؤسسه خدماتی بهار</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">ترازنامه در اودوو</a></li>
 </ul>
   </nav></div>
 

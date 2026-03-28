@@ -63,7 +63,7 @@
     <link rel="index" title="فهرست" href="../genindex.html" />
     <link rel="search" title="جستجو" href="../search.html" />
     <link rel="next" title="انواع صورت‌های مالی اساسی" href="statements.html" />
-    <link rel="prev" title="فصل سوم: تهیه صورت‌های مالی" href="index.html" />
+    <link rel="prev" title="فصل سوم: صورت‌های مالی و گزارش‌های مالی" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fa"/>
   <meta name="docsearch:version" content="" />
@@ -195,7 +195,7 @@
 
 <li class=" current active">
   <a class="nav-link dropdown-item nav-internal" href="index.html">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -389,7 +389,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="index.html">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -524,9 +524,16 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">مقدمه</a></li>
 <li class="toctree-l1"><a class="reference internal" href="statements.html">انواع صورت‌های مالی اساسی</a></li>
-<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a></li>
 <li class="toctree-l1"><a class="reference internal" href="profit-and-loss.html">صورت سود و زیان</a></li>
-<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equity-report.html">صورت سرمایه (تغییرات حقوق مالکانه)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash-flow-statement.html">صورت جریان وجوه نقد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="execuative-summary.html">گزارش خلاصه اجرایی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tax-report.html">گزارش مالیات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genral-ledger.html">دفتر کل (General Ledger)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial-balance.html">تراز آزمایشی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journal-report.html">گزارش دفتر روزنامه (Journal Report)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل سوم</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quize.html">تمرین‌های فصل سوم</a></li>
 </ul>
 </div>
@@ -586,7 +593,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">فصل سوم: تهیه صورت‌های مالی</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">فصل سوم: صورت‌های مالی و گزارش‌های مالی</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">مقدمه</span></li>
   </ul>
@@ -607,33 +614,86 @@
                   
   <section id="id1">
 <h1>مقدمه<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>در فصل‌های پیشین، با چرخه ثبت رویدادهای مالی از دفتر روزنامه تا دفتر کل آشنا شدیم و دیدیم که
-معادله اساسی حسابداری، مبنای تحلیل همه رویدادها است:</p>
-<div class="math notranslate nohighlight">
-\[دارایی‌ها = بدهی‌ها + حقوق مالکانه\]</div>
-<p>با وجود دقت بالای ثبت‌های حسابداری، داده‌های خام دفاتر برای تصمیم‌گیری مدیریتی و ارزیابی عملکرد
-مالی کافی نیستند. مدیران، سرمایه‌گذاران، اعتباردهندگان و نهادهای نظارتی به گزارش‌هایی نیاز دارند
-که اطلاعات را خلاصه، طبقه‌بندی و قابل مقایسه ارائه کند.</p>
-<p>به همین دلیل، در پایان هر دوره مالی، خروجی سیستم حسابداری در قالب صورت‌های مالی تهیه می‌شود.
-صورت‌های مالی، هسته اصلی گزارشگری مالی هستند و تصویری منسجم از وضعیت مالی، عملکرد و جریان‌های
-نقدی واحد تجاری ارائه می‌دهند.</p>
-<p>در این فصل، بر صورت‌های مالی و گزارش‌های پرکاربرد تمرکز می‌کنیم؛ گزارش‌هایی که در تحلیل داخلی،
-گزارشگری مدیریتی و بسیاری از الزامات قانونی کاربرد مستقیم دارند.</p>
+<p>در فصل‌های پیشین، با چرخه کامل ثبت رویدادهای مالی آشنا شدیم: از تجزیه‌وتحلیل رویداد،
+ثبت در دفتر روزنامه، انتقال به دفتر کل، تا تهیه تراز آزمایشی. حالا در مرحله پایانی این
+چرخه هستیم؛ جایی که داده‌های خام به <strong>اطلاعات تصمیم‌ساز</strong> تبدیل می‌شوند.</p>
+<p>این اطلاعات تصمیم‌ساز همان <strong>صورت‌های مالی</strong> هستند.</p>
 <section id="id2">
-<h2>آنچه در این فصل خواهید آموخت<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>در پایان این فصل، انتظار می‌رود بتوانید:</p>
-<ul class="simple">
-<li><p>جایگاه صورت‌های مالی را در فرایند حسابداری توضیح دهید.</p></li>
-<li><p>گزارش‌های کلیدی مانند ترازنامه، صورت سود و زیان و صورت جریان وجوه نقد را تحلیل کنید.</p></li>
-<li><p>ارتباط بین مانده حساب‌ها در دفتر کل و اقلام صورت‌های مالی را تشخیص دهید.</p></li>
-<li><p>از گزارش‌های مالی برای ارزیابی وضعیت و عملکرد واحد تجاری استفاده کنید.</p></li>
-</ul>
+<h2>مبنای همه چیز: معادله حسابداری<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>تمام صورت‌های مالی از یک معادله ریشه می‌گیرند:</p>
+<div class="math notranslate nohighlight">
+\[دارایی‌ها = بدهی‌ها + حقوق\ مالکانه\]</div>
+<p>این معادله در همه لحظات برقرار است. صورت‌های مالی مختلف، جنبه‌های گوناگون همین رابطه را
+با جزئیات بیشتر نشان می‌دهند.</p>
 </section>
 <section id="id3">
-<h2>رویکرد این کتاب در اودوو<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>برخی گزارش‌های مالی در نسخه Enterprise اودوو به‌صورت پیش‌فرض در دسترس هستند. با توجه به اینکه
-مبنای این کتاب نسخه متن‌باز اودوو است، در این فصل تولید و تحلیل این گزارش‌ها را با تکیه بر
-افزونه‌های توسعه‌یافته توسط اودوو نیکس به‌صورت عملی دنبال می‌کنیم.</p>
+<h2>چرا صورت‌های مالی لازم است؟<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>داده‌های دفتر کل، خود به‌تنهایی برای تصمیم‌گیری کافی نیستند. برای مثال:</p>
+<ul class="simple">
+<li><p>آیا این شرکت در دوره گذشته سودآور بوده؟</p></li>
+<li><p>آیا توانایی پرداخت بدهی‌های کوتاه‌مدت را دارد؟</p></li>
+<li><p>دارایی‌های شرکت چقدر است و چه سهمی از آن‌ها با قرض تأمین شده؟</p></li>
+<li><p>پول نقد از کجا آمده و به کجا رفته؟</p></li>
+</ul>
+<p>پاسخ به این پرسش‌ها در <strong>صورت‌های مالی</strong> نهفته است؛ گزارش‌هایی که اطلاعات را خلاصه،
+طبقه‌بندی و در قالب استاندارد ارائه می‌کنند.</p>
+</section>
+<section id="id4">
+<h2>استفاده‌کنندگان صورت‌های مالی<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>صورت‌های مالی برای گروه‌های متعددی تهیه می‌شوند:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>استفاده‌کننده</p></th>
+<th class="head"><p>هدف از مطالعه صورت‌های مالی</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>مدیران داخلی</p></td>
+<td><p>ارزیابی عملکرد و برنامه‌ریزی آینده</p></td>
+</tr>
+<tr class="row-odd"><td><p>سرمایه‌گذاران</p></td>
+<td><p>تصمیم‌گیری درباره خرید یا فروش سهام</p></td>
+</tr>
+<tr class="row-even"><td><p>اعتباردهندگان (بانک‌ها)</p></td>
+<td><p>ارزیابی توانایی بازپرداخت بدهی</p></td>
+</tr>
+<tr class="row-odd"><td><p>سازمان مالیاتی</p></td>
+<td><p>محاسبه درآمد مشمول مالیات</p></td>
+</tr>
+<tr class="row-even"><td><p>کارکنان</p></td>
+<td><p>ارزیابی پایداری مالی کارفرما</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id5">
+<h2>آنچه در این فصل می‌آموزید<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>در این فصل به دو دسته گزارش می‌پردازیم:</p>
+<p><strong>صورت‌های مالی اساسی</strong> که توسط تمام واحدهای تجاری تهیه می‌شوند:</p>
+<ol class="arabic simple">
+<li><p>صورت سود و زیان — نتیجه عملکرد دوره</p></li>
+<li><p>صورت سرمایه (تغییرات حقوق مالکانه) — تغییر در ارزش خالص دارایی مالک</p></li>
+<li><p>ترازنامه (صورت وضعیت مالی) — تصویر مالی در پایان دوره</p></li>
+<li><p>صورت جریان وجوه نقد — گردش نقدی در دوره</p></li>
+</ol>
+<p><strong>گزارش‌های کاربردی</strong> که ابزار تحلیل روزمره هستند:</p>
+<ol class="arabic simple">
+<li><p>تراز آزمایشی — کنترل صحت ثبت‌ها</p></li>
+<li><p>دفتر کل — ریز تراکنش‌های هر حساب</p></li>
+<li><p>گزارش ژورنال — تاریخچه ثبت‌های حسابداری</p></li>
+<li><p>گزارش مالیات — خلاصه مالیات‌های دریافتی و پرداختی</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">توجه</p>
+<p>برخی از این گزارش‌ها (مانند صورت سود و زیان و دفتر کل) در نسخه <strong>Enterprise</strong> اودوو
+به‌صورت آماده موجود هستند. در این کتاب که بر اساس نسخه متن‌باز اودوو تهیه شده، این
+گزارش‌ها را با استفاده از افزونه‌های <strong>اودوو نیکس</strong> پیاده‌سازی و بررسی می‌کنیم.</p>
+</div>
 </section>
 </section>
 
@@ -653,7 +713,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">قبلی</p>
-        <p class="prev-next-title">فصل سوم: تهیه صورت‌های مالی</p>
+        <p class="prev-next-title">فصل سوم: صورت‌های مالی و گزارش‌های مالی</p>
       </div>
     </a>
     <a class="right-next"
@@ -684,8 +744,10 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">آنچه در این فصل خواهید آموخت</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">رویکرد این کتاب در اودوو</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">مبنای همه چیز: معادله حسابداری</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">چرا صورت‌های مالی لازم است؟</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">استفاده‌کنندگان صورت‌های مالی</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">آنچه در این فصل می‌آموزید</a></li>
 </ul>
   </nav></div>
 

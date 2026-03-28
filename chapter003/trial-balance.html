@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; مستندات کتاب اودوو: اصول حسابداری ۱</title>
+    <title>تراز آزمایشی &#8212; مستندات کتاب اودوو: اصول حسابداری ۱</title>
   
   
   
@@ -50,6 +50,7 @@
                 gtag('js', new Date());
                 gtag('config', 'G-KF50Z2TPES');
             </script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter003/trial-balance';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -61,8 +62,8 @@
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="فهرست" href="../genindex.html" />
     <link rel="search" title="جستجو" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="journal-report.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="genral-ledger.html" />
+    <link rel="next" title="گزارش دفتر روزنامه (Journal Report)" href="journal-report.html" />
+    <link rel="prev" title="دفتر کل (General Ledger)" href="genral-ledger.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fa"/>
   <meta name="docsearch:version" content="" />
@@ -194,7 +195,7 @@
 
 <li class=" current active">
   <a class="nav-link dropdown-item nav-internal" href="index.html">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -388,7 +389,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="index.html">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -520,12 +521,19 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">فهرست مطالب:</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">مقدمه</a></li>
 <li class="toctree-l1"><a class="reference internal" href="statements.html">انواع صورت‌های مالی اساسی</a></li>
-<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a></li>
 <li class="toctree-l1"><a class="reference internal" href="profit-and-loss.html">صورت سود و زیان</a></li>
-<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equity-report.html">صورت سرمایه (تغییرات حقوق مالکانه)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash-flow-statement.html">صورت جریان وجوه نقد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="execuative-summary.html">گزارش خلاصه اجرایی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tax-report.html">گزارش مالیات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genral-ledger.html">دفتر کل (General Ledger)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">تراز آزمایشی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journal-report.html">گزارش دفتر روزنامه (Journal Report)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل سوم</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quize.html">تمرین‌های فصل سوم</a></li>
 </ul>
 </div>
@@ -585,9 +593,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">فصل سوم: تهیه صورت‌های مالی</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">فصل سوم: صورت‌های مالی و گزارش‌های مالی</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">تراز آزمایشی</span></li>
   </ul>
 </nav>
 </div>
@@ -604,7 +612,108 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <section id="id1">
+<h1>تراز آزمایشی<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>تراز آزمایشی (Trial Balance) فهرستی از تمام حساب‌های دفتر کل به همراه مانده بدهکار
+یا بستانکار آن‌ها در یک تاریخ مشخص است. هدف اصلی تراز آزمایشی <strong>بررسی صحت ریاضی
+ثبت‌های حسابداری</strong> است.</p>
+<section id="id2">
+<h2>چرا تراز آزمایشی؟<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>در حسابداری دوطرفه، هر رویداد به‌صورت همزمان در طرف بدهکار و بستانکار ثبت می‌شود.
+بنابراین جمع کل بدهکارها باید برابر جمع کل بستانکارها باشد. تراز آزمایشی این تساوی
+را بررسی می‌کند:</p>
+<div class="math notranslate nohighlight">
+\[\sum بدهکار = \sum بستانکار\]</div>
+<p>اگر این تساوی برقرار نباشد، حتماً خطایی در ثبت‌ها رخ داده است.</p>
+</section>
+<section id="id3">
+<h2>انواع تراز آزمایشی<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>سه نوع تراز آزمایشی وجود دارد که در مراحل مختلف چرخه حسابداری تهیه می‌شوند:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>نوع</p></th>
+<th class="head"><p>زمان تهیه و هدف</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>تراز آزمایشی اولیه</p></td>
+<td><p>پس از انتقال به دفتر کل، برای بررسی اولیه</p></td>
+</tr>
+<tr class="row-odd"><td><p>تراز آزمایشی اصلاح‌شده</p></td>
+<td><p>پس از ثبت تعدیلات، برای تهیه صورت‌های مالی</p></td>
+</tr>
+<tr class="row-even"><td><p>تراز آزمایشی اختتامیه</p></td>
+<td><p>پس از بستن حساب‌های موقت، برای شروع دوره جدید</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id4">
+<h2>ساختار تراز آزمایشی<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>مؤسسه خدماتی بهار
+تراز آزمایشی اصلاح‌شده
+در تاریخ ۲۹ اسفند ۱۴۰۳
+══════════════════════════════════════════════════
+ردیف │ نام حساب                │  بدهکار  │ بستانکار
+──────┼─────────────────────────┼──────────┼──────────
+  ۱  │ صندوق                   │ ۲۲۴٬۰۰۰  │
+  ۲  │ حساب‌های دریافتنی        │ ۱۴۰٬۰۰۰  │
+  ۳  │ اسناد دریافتنی           │ ۱۲۰٬۰۰۰  │
+  ۴  │ زمین                     │ ۴۰۰٬۰۰۰  │
+  ۵  │ وسایل نقلیه              │ ۲۸۰٬۰۰۰  │
+  ۶  │ حساب‌های پرداختنی        │          │ ۱۱۰٬۰۰۰
+  ۷  │ اسناد پرداختنی کوتاه‌مدت │          │  ۸۰٬۰۰۰
+  ۸  │ اسناد پرداختنی بلندمدت   │          │ ۱۴۰٬۰۰۰
+  ۹  │ سرمایه (اول دوره)        │          │ ۳۰۰٬۰۰۰
+ ۱۰  │ برداشت مالک              │  ۲۰٬۰۰۰  │
+ ۱۱  │ درآمد ارائه خدمات        │          │ ۸۷۴٬۰۰۰
+ ۱۲  │ هزینه حقوق               │ ۲۱۰٬۰۰۰  │
+ ۱۳  │ هزینه تعمیرات            │  ۷۰٬۰۰۰  │
+ ۱۴  │ هزینه آب و برق           │  ۴۰٬۰۰۰  │
+ ۱۵  │ هزینه اجاره              │  ۸۰٬۰۰۰  │
+──────┼─────────────────────────┼──────────┼──────────
+     │ جمع کل                  │۱٬۵۸۴٬۰۰۰│۱٬۵۰۴٬۰۰۰
+══════════════════════════════════════════════════
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">توجه</p>
+<p>در مثال بالا جمع بدهکار با جمع بستانکار برابر نیست چون سرمایه‌گذاری مجدد
+مالک (۸۰٬۰۰۰) هنوز اضافه نشده است. در تمرین‌ها همیشه باید دو طرف مساوی باشند.</p>
+</div>
+</section>
+<section id="id5">
+<h2>تراز آزمایشی چه خطاهایی را کشف نمی‌کند؟<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>هرچند تراز آزمایشی ابزار مفیدی است، اما برخی خطاها را <strong>نمی‌تواند</strong> کشف کند:</p>
+<ul class="simple">
+<li><p><strong>خطای حذف</strong>: رویداد اصلاً ثبت نشده</p></li>
+<li><p><strong>خطای تکرار</strong>: یک رویداد دو بار ثبت شده</p></li>
+<li><p><strong>خطای جابجایی</strong>: مبلغ صحیح اما در حساب اشتباه ثبت شده</p></li>
+<li><p><strong>خطای معکوس</strong>: بدهکار و بستانکار جابجا شده اما با مبالغ مساوی</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>تراز آزمایشی در اودوو<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>مسیر دسترسی:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Accounting → Reporting → Trial Balance
+</pre></div>
+</div>
+<p>قابلیت‌های تراز آزمایشی در اودوو:</p>
+<ul class="simple">
+<li><p>نمایش مانده ابتدای دوره، تغییرات دوره و مانده پایان دوره</p></li>
+<li><p>فیلتر بر اساس تاریخ، ژورنال و شریک تجاری</p></li>
+<li><p>نمایش فقط حساب‌هایی که دارای گردش در دوره هستند</p></li>
+<li><p>مقایسه با دوره‌های قبلی</p></li>
+<li><p>خروجی PDF و Excel برای ارسال به حسابرس</p></li>
+</ul>
+</section>
+</section>
+
 
                 </article>
               
@@ -621,7 +730,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">قبلی</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">دفتر کل (General Ledger)</p>
       </div>
     </a>
     <a class="right-next"
@@ -629,7 +738,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">بعدی</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">گزارش دفتر روزنامه (Journal Report)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -651,9 +760,13 @@
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">چرا تراز آزمایشی؟</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">انواع تراز آزمایشی</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">ساختار تراز آزمایشی</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">تراز آزمایشی چه خطاهایی را کشف نمی‌کند؟</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">تراز آزمایشی در اودوو</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
