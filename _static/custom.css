@@ -1,0 +1,19 @@
+/* custom CSS classes (used in docs/user_guide/extending.rst) NOTE: the begin
+ *  and end markers are necessary for partial file includes! don't remove them.
+ */
+
+/* begin-custom-color/* <your static path>/custom.css */
+body {
+  direction: rtl !important;
+}
+
+/* Style all links with a specific subset of versions */
+.version-switcher__container a[data-version="0.2"],
+.version-switcher__container a[data-version="0.3"] {
+   background-color: red;
+}
+
+/* Style all links with `stable` in the version name */
+.version-switcher__container a[data-version-name*="stable"] {
+   background-color: green;
+}
