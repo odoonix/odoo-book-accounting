@@ -14,6 +14,7 @@ from typing import Any, Dict
 
 from sphinx.application import Sphinx
 from sphinx.locale import _
+from sphinx.locale import get_translation
 
 import pydata_sphinx_theme
 
@@ -70,7 +71,6 @@ html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
 html_css_files = [
     'custom.css',
-    'rtl.css'
 ]
 html_js_files = []
 html_context = {
@@ -78,7 +78,11 @@ html_context = {
 }
 html_show_sourcelink = False
 html_theme_options={
+    "back_to_top_button": True,
     # Header links
+    "header_links_before_dropdown": 2,
+
+    # Links
     "external_links": [
         {
             "name": "Moonsun (Golden Odoo Partner)", 
@@ -88,7 +92,15 @@ html_theme_options={
             "url": "https://odoonix.com"
         },
     ],
-    "header_links_before_dropdown": 2,
+    "icon_links_label": _("Quick Links"),
+    "icon_links": [
+        {
+            "name": _("GitHub"),
+            "url": "https://github.com/odoonix/odoo-book-accounting",
+            "icon": "fab fa-github-square",
+        },
+    ],
+
 
     # Navigation bar
     "show_nav_level": 3,
@@ -96,20 +108,26 @@ html_theme_options={
     "navbar_start": [
         "navbar-logo", 
     ],
+    "navbar_end": [
+        "version-switcher",
+        "navbar-icon-links.html"
+    ],
     
     # Page Table of Contents
     "show_toc_level": 2,
 
     # Sidebar items
     "secondary_sidebar_items": [
-        "page-toc", 
-        "sourcelink", 
-        "version-switcher"
+        "page-toc",
+        "sourcelink",
+        # "search-field.html",
+        # "version-switcher"
     ],
     "primary_sidebar_end": [
         "indices.html", 
-        "sidebar-ethical-ads.html", 
-        "version-switcher"
+        "sidebar-ethical-ads.html",
+        # "search-field.html",
+        # "version-switcher"
     ],
 
     # Github integration
@@ -128,4 +146,15 @@ html_theme_options={
     </a>
     """,
     "show_version_warning_banner": True,
+
+
+    # Search
+    "search_bar_text": _("Search the docs..."),
+}
+html_sidebars = {
+    "**": [
+        "search-field.html", 
+        "sidebar-nav-bs.html", 
+        "sidebar-ethical-ads.html"
+    ]
 }
