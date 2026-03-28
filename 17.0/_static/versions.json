@@ -1,0 +1,15 @@
+[
+    {
+        "name": "latest",
+        "version": "18.0",
+        "url": "https://odoonix.github.io/odoo-book-accounting/"
+    },
+    {
+        "version": "17.0",
+        "url": "https://odoonix.github.io/odoo-book-accounting/17.0/"
+    },
+    {
+        "version": "16.0",
+        "url": "https://odoonix.github.io/odoo-book-accounting/16.0/"
+    }
+]
