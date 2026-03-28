@@ -1,19 +1,15 @@
 [
     {
-        "name": "v2.1 (stable)",
-        "version": "2.1",
-        "url": "https://mysite.org/en/2.1/"
+        "name": "latest",
+        "version": "18.0",
+        "url": "https://odoonix.github.io/odoo-book-accounting/"
     },
     {
-        "version": "2.1rc1",
-        "url": "https://mysite.org/en/2.1rc1/"
+        "version": "17.0",
+        "url": "https://odoonix.github.io/odoo-book-accounting/17.0/"
     },
     {
-        "version": "2.0",
-        "url": "https://mysite.org/en/2.0/"
-    },
-    {
-        "version": "1.0",
-        "url": "https://mysite.org/en/1.0/"
+        "version": "16.0",
+        "url": "https://odoonix.github.io/odoo-book-accounting/16.0/"
     }
 ]
