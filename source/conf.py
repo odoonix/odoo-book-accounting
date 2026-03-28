@@ -77,10 +77,21 @@ html_context = {
     "rtl": True
 }
 html_show_sourcelink = False
+html_favicon = "_static/logo.png"
 html_theme_options={
     "back_to_top_button": True,
-    # Header links
+    "analytics": {
+        "google_analytics_id": "G-KF50Z2TPES",
+    },
+    # Header
     "header_links_before_dropdown": 2,
+    "logo": {
+        "text": "کتاب اودوو: اصول حسابداری ۱",
+        "alt_text": "کتاب اودوو - اصول حسابداری ۱ با اودوونیکس",
+        "image_light": "_static/logo-light.png",
+        "image_dark": "_static/logo-dark.png",
+        "link": "https://odoonix.github.io/odoo-book-accounting",
+    },
 
     # Links
     "external_links": [
