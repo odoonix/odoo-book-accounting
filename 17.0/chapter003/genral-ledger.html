@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; مستندات کتاب اودوو: اصول حسابداری ۱</title>
+    <title>دفتر کل (General Ledger) &#8212; مستندات کتاب اودوو: اصول حسابداری ۱</title>
   
   
   
@@ -50,6 +50,7 @@
                 gtag('js', new Date());
                 gtag('config', 'G-KF50Z2TPES');
             </script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter003/genral-ledger';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -61,8 +62,8 @@
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="فهرست" href="../genindex.html" />
     <link rel="search" title="جستجو" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="trial-balance.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="tax-report.html" />
+    <link rel="next" title="تراز آزمایشی" href="trial-balance.html" />
+    <link rel="prev" title="گزارش مالیات" href="tax-report.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fa"/>
   <meta name="docsearch:version" content="" />
@@ -194,7 +195,7 @@
 
 <li class=" current active">
   <a class="nav-link dropdown-item nav-internal" href="index.html">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -388,7 +389,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="index.html">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -520,12 +521,19 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">فهرست مطالب:</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">مقدمه</a></li>
 <li class="toctree-l1"><a class="reference internal" href="statements.html">انواع صورت‌های مالی اساسی</a></li>
-<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a></li>
 <li class="toctree-l1"><a class="reference internal" href="profit-and-loss.html">صورت سود و زیان</a></li>
-<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equity-report.html">صورت سرمایه (تغییرات حقوق مالکانه)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash-flow-statement.html">صورت جریان وجوه نقد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="execuative-summary.html">گزارش خلاصه اجرایی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tax-report.html">گزارش مالیات</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">دفتر کل (General Ledger)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial-balance.html">تراز آزمایشی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journal-report.html">گزارش دفتر روزنامه (Journal Report)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل سوم</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quize.html">تمرین‌های فصل سوم</a></li>
 </ul>
 </div>
@@ -585,9 +593,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">فصل سوم: تهیه صورت‌های مالی</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">فصل سوم: صورت‌های مالی و گزارش‌های مالی</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">دفتر کل (General Ledger)</span></li>
   </ul>
 </nav>
 </div>
@@ -604,7 +612,113 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <section id="general-ledger">
+<h1>دفتر کل (General Ledger)<a class="headerlink" href="#general-ledger" title="Link to this heading">#</a></h1>
+<p>دفتر کل یکی از اصلی‌ترین ابزارهای حسابداری است که تمام رویدادهای مالی ثبت‌شده را به
+تفکیک هر حساب نشان می‌دهد. اگر دفتر روزنامه را «دیدگاه زمانی» بدانیم (رویدادها به ترتیب
+تاریخ)، دفتر کل «دیدگاه حسابی» است (تمام تراکنش‌های یک حساب در کنار هم).</p>
+<section id="id1">
+<h2>جایگاه دفتر کل در چرخه حسابداری<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>رویداد مالی
+    ↓
+ثبت در دفتر روزنامه
+    ↓
+انتقال به دفتر کل  ←  اینجا هستیم
+    ↓
+تراز آزمایشی
+    ↓
+صورت‌های مالی
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>ساختار صفحه دفتر کل<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>هر حساب در دفتر کل یک صفحه مجزا دارد که معمولاً به شکل T (T-Account) رسم می‌شود:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>════════════════════════════════════════════════════
+                  نام حساب: صندوق
+────────────────────────────────────────────────────
+تاریخ │  شرح         │ بدهکار │ بستانکار │  مانده
+────────────────────────────────────────────────────
+۱/۱   │ افتتاح       │ ۵۰۰٬۰۰۰│          │ ۵۰۰٬۰۰۰
+۵/۱   │ دریافت خدمت  │ ۱۵۰٬۰۰۰│          │ ۶۵۰٬۰۰۰
+۱۰/۱  │ پرداخت اجاره │        │ ۸۰٬۰۰۰   │ ۵۷۰٬۰۰۰
+۱۵/۱  │ پرداخت حقوق  │        │ ۲۱۰٬۰۰۰  │ ۳۶۰٬۰۰۰
+════════════════════════════════════════════════════
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>اطلاعات موجود در دفتر کل<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>هر سطر دفتر کل شامل این اطلاعات است:</p>
+<ul class="simple">
+<li><p><strong>تاریخ</strong> — زمان وقوع رویداد</p></li>
+<li><p><strong>شرح</strong> — توضیح مختصر رویداد</p></li>
+<li><p><strong>مرجع</strong> — شماره سند در دفتر روزنامه</p></li>
+<li><p><strong>بدهکار</strong> — مبالغی که حساب را بدهکار کرده‌اند</p></li>
+<li><p><strong>بستانکار</strong> — مبالغی که حساب را بستانکار کرده‌اند</p></li>
+<li><p><strong>مانده</strong> — مانده تجمعی حساب تا آن لحظه</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>نحوه محاسبه مانده حساب<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>برای هر حساب:</p>
+<div class="math notranslate nohighlight">
+\[مانده = جمع\ بدهکار - جمع\ بستانکار\]</div>
+<ul class="simple">
+<li><p>اگر نتیجه <strong>مثبت</strong> باشد: مانده بدهکار است.</p></li>
+<li><p>اگر نتیجه <strong>منفی</strong> باشد: مانده بستانکار است.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">توجه</p>
+<p>ماهیت مانده هر حساب از قبل مشخص است:
+دارایی‌ها و هزینه‌ها → مانده بدهکار
+بدهی‌ها، سرمایه و درآمدها → مانده بستانکار</p>
+</div>
+</section>
+<section id="id5">
+<h2>مثال: دفتر کل مؤسسه خدماتی بهار<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>فرض کنید مؤسسه بهار رویدادهای زیر را در فروردین‌ماه داشته است:</p>
+<ol class="arabic simple">
+<li><p>دریافت ۵۰۰٬۰۰۰ ریال نقد به عنوان سرمایه اولیه</p></li>
+<li><p>پرداخت ۸۰٬۰۰۰ ریال بابت اجاره دفتر</p></li>
+<li><p>دریافت ۱۵۰٬۰۰۰ ریال بابت ارائه خدمات به مشتری</p></li>
+</ol>
+<p>دفتر کل حساب صندوق:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>حساب: صندوق
+────────────────────────────────────────────────────
+تاریخ │ شرح           │ بدهکار  │ بستانکار │  مانده
+────────────────────────────────────────────────────
+۱/۱   │ سرمایه اولیه  │ ۵۰۰٬۰۰۰ │          │ ۵۰۰٬۰۰۰
+۵/۱   │ اجاره دفتر    │         │  ۸۰٬۰۰۰  │ ۴۲۰٬۰۰۰
+۱۵/۱  │ درآمد خدمات   │ ۱۵۰٬۰۰۰ │          │ ۵۷۰٬۰۰۰
+────────────────────────────────────────────────────
+جمع:                   │ ۶۵۰٬۰۰۰ │  ۸۰٬۰۰۰  │ ۵۷۰٬۰۰۰
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h2>دفتر کل در اودوو<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>اودوو دفتر کل را به‌صورت کاملاً دیجیتال و قابل جستجو ارائه می‌دهد.</p>
+<p>مسیر دسترسی:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Accounting → Reporting → General Ledger
+</pre></div>
+</div>
+<p>قابلیت‌های دفتر کل در اودوو:</p>
+<ul class="simple">
+<li><p>فیلتر بر اساس حساب، دوره زمانی، ژورنال و شریک تجاری</p></li>
+<li><p>نمایش ریز تراکنش‌ها یا فقط مانده خلاصه</p></li>
+<li><p>امکان کلیک روی هر سند برای مشاهده سند اصلی</p></li>
+<li><p>خروجی در فرمت PDF یا Excel</p></li>
+<li><p>نمایش مانده ابتدایی، تغییرات دوره و مانده پایانی به‌طور جداگانه</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">مهم</p>
+<p>دفتر کل اودوو به‌صورت <strong>Real-time</strong> به‌روز می‌شود. به محض ثبت یک سند حسابداری،
+دفتر کل آن را منعکس می‌کند؛ بر خلاف سیستم‌های سنتی که نیاز به انتقال دستی داشتند.</p>
+</div>
+</section>
+</section>
+
 
                 </article>
               
@@ -621,7 +735,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">قبلی</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">گزارش مالیات</p>
       </div>
     </a>
     <a class="right-next"
@@ -629,7 +743,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">بعدی</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">تراز آزمایشی</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -651,9 +765,14 @@
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">جایگاه دفتر کل در چرخه حسابداری</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ساختار صفحه دفتر کل</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">اطلاعات موجود در دفتر کل</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">نحوه محاسبه مانده حساب</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">مثال: دفتر کل مؤسسه خدماتی بهار</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">دفتر کل در اودوو</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>فصل سوم: تهیه صورت‌های مالی &#8212; مستندات کتاب اودوو: اصول حسابداری ۱</title>
+    <title>فصل سوم: صورت‌های مالی و گزارش‌های مالی &#8212; مستندات کتاب اودوو: اصول حسابداری ۱</title>
   
   
   
@@ -194,7 +194,7 @@
 
 <li class=" current active">
   <a class="nav-link dropdown-item nav-internal" href="#">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -384,7 +384,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    فصل سوم: تهیه صورت‌های مالی
+    فصل سوم: صورت‌های مالی و گزارش‌های مالی
   </a>
 </li>
 
@@ -519,9 +519,16 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">مقدمه</a></li>
 <li class="toctree-l1"><a class="reference internal" href="statements.html">انواع صورت‌های مالی اساسی</a></li>
-<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a></li>
 <li class="toctree-l1"><a class="reference internal" href="profit-and-loss.html">صورت سود و زیان</a></li>
-<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equity-report.html">صورت سرمایه (تغییرات حقوق مالکانه)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash-flow-statement.html">صورت جریان وجوه نقد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="execuative-summary.html">گزارش خلاصه اجرایی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tax-report.html">گزارش مالیات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genral-ledger.html">دفتر کل (General Ledger)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial-balance.html">تراز آزمایشی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="journal-report.html">گزارش دفتر روزنامه (Journal Report)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل سوم</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quize.html">تمرین‌های فصل سوم</a></li>
 </ul>
 </div>
@@ -580,7 +587,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">فصل سوم: تهیه صورت‌های مالی</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">فصل سوم: صورت‌های مالی و گزارش‌های مالی</span></li>
   </ul>
 </nav>
 </div>
@@ -598,47 +605,133 @@
                 <article class="bd-article">
                   
   <section id="id1">
-<h1>فصل سوم: تهیه صورت‌های مالی<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>صورت‌های مالی در حقیقت گزارش‌هایی هستند که وضعیت مالی یک شرکت را در یک دوره زمانی مشخص نشان می‌دهند. این صورت‌ها شامل صورت سود و زیان، صورت سرمایه، ترازنامه و صورت جریان وجوه نقد می‌شوند. تهیه این صورت‌ها به مدیران، سرمایه‌گذاران، اعتباردهندگان و سایر ذینفعان کمک می‌کند تا تصمیمات مالی آگاهانه‌تری بگیرند. در این فصل، ما به بررسی هر یک از این صورت‌های مالی خواهیم پرداخت و نحوه تهیه آن‌ها را آموزش خواهیم داد.</p>
-<p>در این فصل نیز بعد از بیان مفاهیم پایه حسابداری تلاش می‌کنیم آنها را با استفاده از مثال‌های عملی و در نرم افزار اودوو به شما آموزش دهیم. در پایان این فصل، شما قادر خواهید بود صورت‌های مالی اساسی را تهیه کنید و گزارش‌های مالی دقیقی ارائه دهید.</p>
-<p>پس از مطالعه این فصل انتظار داریم شما بتوانید:</p>
+<h1>فصل سوم: صورت‌های مالی و گزارش‌های مالی<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>پس از پایان چرخه ثبت رویدادهای مالی، نوبت به خروجی نهایی سیستم حسابداری می‌رسد: <strong>صورت‌های
+مالی</strong>. این گزارش‌ها، اطلاعات پراکنده دفاتر را به شکلی خلاصه، ساختارمند و قابل مقایسه در
+اختیار تصمیم‌گیرندگان قرار می‌دهند.</p>
+<p>در این فصل، ابتدا با صورت‌های مالی اساسی آشنا می‌شوید؛ سپس گزارش‌های کاربردی در نرم‌افزار
+اودوو را بررسی می‌کنیم.</p>
+<p>پس از مطالعه این فصل انتظار می‌رود بتوانید:</p>
 <ul class="simple">
-<li><p>صورت‌های مالی اساسی را بشناسد و انواع آن را توضیح دهد.</p></li>
-<li><p>صورت سود و زیان را تنظیم کند.</p></li>
-<li><p>صورت سرمایه را تنظیم کنید.</p></li>
-<li><p>صورت مالی ترازنامه را تنظیم کنید.</p></li>
-<li><p>اصول تهیه گزارش از مانده حساب‌ها در پایان دوره مالی را بداند.</p></li>
-<li><p>ماهیت مانده حساب‌ها را تشخیص دهد.</p></li>
+<li><p>صورت‌های مالی اساسی را نام ببرید و هدف هر کدام را توضیح دهید.</p></li>
+<li><p>صورت سود و زیان، صورت سرمایه و ترازنامه را تنظیم کنید.</p></li>
+<li><p>صورت جریان وجوه نقد را تحلیل کنید.</p></li>
+<li><p>گزارش‌های کاربردی مانند دفتر کل، تراز آزمایشی و گزارش ژورنال را در اودوو استخراج کنید.</p></li>
+<li><p>ماهیت مانده حساب‌ها را شناسایی کرده و آن‌ها را در صورت‌های مالی طبقه‌بندی کنید.</p></li>
 </ul>
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">فهرست مطالب:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">مقدمه</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#id2">آنچه در این فصل خواهید آموخت</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#id3">رویکرد این کتاب در اودوو</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#id2">مبنای همه چیز: معادله حسابداری</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#id3">چرا صورت‌های مالی لازم است؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#id4">استفاده‌کنندگان صورت‌های مالی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#id5">آنچه در این فصل می‌آموزید</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="statements.html">انواع صورت‌های مالی اساسی</a></li>
-<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id2">ساختار ترازنامه</a></li>
-<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id3">مثال ترازنامه مؤسسه بهار</a></li>
-<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id4">ترازنامه طبقه‌بندی شده</a></li>
-<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id9">ماهیت مانده حساب‌ها</a></li>
-<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id10">نکته مهم برای آزمون‌ها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statements.html">انواع صورت‌های مالی اساسی</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="statements.html#id2">چهار صورت مالی اساسی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statements.html#id3">ارتباط بین صورت‌های مالی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statements.html#id4">ارتباط با دفتر کل و تراز آزمایشی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statements.html#id5">حساب‌های موقت در برابر حساب‌های دائمی</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="profit-and-loss.html">صورت سود و زیان</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id2">ویژگی مهم</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id3">فرمول محاسبه سود</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id4">مثال 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id5">صورت سود و زیان مؤسسه خدماتی بهار</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id6">نکته آموزشی مهم</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id2">مشخصه زمانی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id3">فرمول اصلی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id4">اقلام اصلی صورت سود و زیان</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id5">مثال عملی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id6">صورت سود و زیان مؤسسه خدماتی بهار</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id7">صورت سود و زیان در اودوو</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profit-and-loss.html#id8">تمثیل آموزشی</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equity-report.html">صورت سرمایه (تغییرات حقوق مالکانه)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="equity-report.html#id2">مشخصه زمانی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="equity-report.html#id3">چه چیزی سرمایه را تغییر می‌دهد؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="equity-report.html#id4">فرمول محاسبه سرمایه پایان دوره</a></li>
+<li class="toctree-l2"><a class="reference internal" href="equity-report.html#id5">مثال عملی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="equity-report.html#id6">صورت سرمایه مؤسسه خدماتی بهار</a></li>
+<li class="toctree-l2"><a class="reference internal" href="equity-report.html#id7">ارتباط با سایر صورت‌های مالی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="equity-report.html#id8">صورت سرمایه در اودوو</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="balance-sheet.html">ترازنامه: صورت وضعیت مالی</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id2">مشخصه زمانی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id3">معادله اساسی ترازنامه</a></li>
+<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id4">اجزای ترازنامه</a></li>
+<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id5">ترازنامه طبقه‌بندی‌شده</a></li>
+<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id10">ماهیت مانده حساب‌ها</a></li>
+<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id11">مثال عملی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id12">ترازنامه مؤسسه خدماتی بهار</a></li>
+<li class="toctree-l2"><a class="reference internal" href="balance-sheet.html#id13">ترازنامه در اودوو</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cash-flow-statement.html">صورت جریان وجوه نقد</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cash-flow-statement.html#id2">چرا سود خالص با نقدینگی متفاوت است؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cash-flow-statement.html#id3">سه بخش اصلی صورت جریان وجوه نقد</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cash-flow-statement.html#id4">نمونه صورت جریان وجوه نقد</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cash-flow-statement.html#id5">روش‌های تهیه صورت جریان وجوه نقد</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cash-flow-statement.html#id6">صورت جریان وجوه نقد در اودوو</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="execuative-summary.html">گزارش خلاصه اجرایی</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="execuative-summary.html#id2">چرا خلاصه اجرایی اهمیت دارد؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="execuative-summary.html#id3">محتوای معمول خلاصه اجرایی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="execuative-summary.html#id4">نمونه خلاصه اجرایی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="execuative-summary.html#kpi">شاخص‌های کلیدی عملکرد مالی (KPI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="execuative-summary.html#id5">خلاصه اجرایی در اودوو</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tax-report.html">گزارش مالیات</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tax-report.html#vat">مالیات بر ارزش افزوده (VAT) چیست؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tax-report.html#id2">مالیات خروجی در برابر مالیات ورودی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tax-report.html#id3">محاسبه مالیات قابل پرداخت</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tax-report.html#id4">مثال عملی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tax-report.html#id5">ثبت حسابداری مالیات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tax-report.html#id6">گزارش مالیات در اودوو</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tax-report.html#id7">تنظیمات مالیاتی در اودوو</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="genral-ledger.html">دفتر کل (General Ledger)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="genral-ledger.html#id1">جایگاه دفتر کل در چرخه حسابداری</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genral-ledger.html#id2">ساختار صفحه دفتر کل</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genral-ledger.html#id3">اطلاعات موجود در دفتر کل</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genral-ledger.html#id4">نحوه محاسبه مانده حساب</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genral-ledger.html#id5">مثال: دفتر کل مؤسسه خدماتی بهار</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genral-ledger.html#id6">دفتر کل در اودوو</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trial-balance.html">تراز آزمایشی</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="trial-balance.html#id2">چرا تراز آزمایشی؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trial-balance.html#id3">انواع تراز آزمایشی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trial-balance.html#id4">ساختار تراز آزمایشی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trial-balance.html#id5">تراز آزمایشی چه خطاهایی را کشف نمی‌کند؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trial-balance.html#id6">تراز آزمایشی در اودوو</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="journal-report.html">گزارش دفتر روزنامه (Journal Report)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="journal-report.html#id1">تفاوت گزارش ژورنال با دفتر کل</a></li>
+<li class="toctree-l2"><a class="reference internal" href="journal-report.html#id2">ساختار گزارش ژورنال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="journal-report.html#id3">کاربردهای گزارش ژورنال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="journal-report.html#id4">انواع ژورنال در اودوو</a></li>
+<li class="toctree-l2"><a class="reference internal" href="journal-report.html#id5">گزارش ژورنال در اودوو</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="summary.html">جمع‌بندی فصل سوم</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="summary.html#id2">صورت‌های مالی اساسی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="summary.html#id3">ترتیب تهیه صورت‌های مالی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="summary.html#id4">فرمول‌های کلیدی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="summary.html#id5">گزارش‌های کاربردی در اودوو</a></li>
+<li class="toctree-l2"><a class="reference internal" href="summary.html#id6">طبقه‌بندی حساب‌ها</a></li>
+<li class="toctree-l2"><a class="reference internal" href="summary.html#id7">ماهیت مانده حساب‌ها</a></li>
+<li class="toctree-l2"><a class="reference internal" href="summary.html#id8">نکته پایانی</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="quize.html">تمرین‌های فصل سوم</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quize.html#id2">پرسش‌های خودآزمایی</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quize.html#id3">تمرین‌ها</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quize.html#id2">پرسش‌های مفهومی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quize.html#id3">تمرین‌های محاسباتی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quize.html#id4">تمرین‌های کاربردی در اودوو</a></li>
 </ul>
 </li>
 </ul>
