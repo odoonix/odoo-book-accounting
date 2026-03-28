@@ -29,6 +29,7 @@ jobs:
 
       - name: Build Sphinx HTML
         run: |
+          make clean
           make html
 
       - name: Prepare deployment folder
