@@ -23,10 +23,9 @@ import pydata_sphinx_theme
 sys.path.append(str(Path(".").resolve()))
 
 
-
-project = 'Odoo Book: Accounting'
-copyright = '2025, Odoonix'
-author = 'Odoonix'
+project = 'کتاب اودوو: اصول حسابداری ۱'
+copyright = 'اودوونیکس ۱۴۰۴'
+author = 'اودوونیکس'
 
 
 extensions = [
@@ -73,18 +72,60 @@ html_css_files = [
     'custom.css',
     'rtl.css'
 ]
+html_js_files = []
 html_context = {
     "rtl": True
 }
+html_show_sourcelink = False
 html_theme_options={
-    # direction = "ltr"
-    # analytics_id = "UA-XXXXX-X"
-    # website = ""
-    # facebook = ""
-    # googleplus = ""
-    # linkedin = ""
-    # twitter = ""
-    # github = ""
-    # gitlab = ""
-    # bitbucket = ""
+    # Header links
+    "external_links": [
+        {
+            "name": "Moonsun (Golden Odoo Partner)", 
+            "url": "https://moonsun.au"
+        },{
+            "name": "Odoonix (OCA Partner)", 
+            "url": "https://odoonix.com"
+        },
+    ],
+    "header_links_before_dropdown": 2,
+
+    # Navigation bar
+    "show_nav_level": 3,
+    "collapse_navigation": True,
+    "navbar_start": [
+        "navbar-logo", 
+    ],
+    
+    # Page Table of Contents
+    "show_toc_level": 2,
+
+    # Sidebar items
+    "secondary_sidebar_items": [
+        "page-toc", 
+        "sourcelink", 
+        "version-switcher"
+    ],
+    "primary_sidebar_end": [
+        "indices.html", 
+        "sidebar-ethical-ads.html", 
+        "version-switcher"
+    ],
+
+    # Github integration
+    "use_edit_page_button": True,
+    "check_switcher": False,
+    "switcher": {
+        "json_url": "https://odoonix.github.io/odoo-book-accounting/_static/versions.json",
+        "version_match": "main",
+    },
+
+    # ADS
+    "announcement": """
+    ما را در توسعه و نگداری این کتاب
+    <a href='https://odoonix.com/pages/donate'>
+        حمایت مالی کنید! 
+    </a>
+    """,
+    "show_version_warning_banner": True,
 }
